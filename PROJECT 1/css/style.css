@@ -1,0 +1,759 @@
+* {
+    transition: all ease 0.15s;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* index pages styles */
+
+.menu {
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.menu:active{
+    transform: scale(0.9);
+}
+
+.subnav {
+    background-color: rgb(255, 255, 255);
+    padding: 15px 0;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.subnav a {
+    color: grey;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.subnav button {
+    background-color: #76b1c4;
+    padding: 8px 38px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.home_header {
+    min-height: 68vh;
+    background-image: url(../imgs/room_2.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.banner_content {
+    width: 500px;
+    /* background-color: rgb(0, 8, 240); */
+    padding: 2px;
+    margin: auto;
+}
+
+.banner_content p {
+    background-color: white;
+    padding: 4px 15px;
+    width: fit-content;
+    font-size: 10px;
+}
+
+.banner_content h1 {
+    font-weight: 100;
+    font-size: 40px;
+    margin: 5px 0;
+    color: white;
+}
+
+.banner_content h2 {
+    font-size: 60px;
+    color: white;
+    font-weight: 500;
+}
+
+.translated {
+    background-color: #6da4b5;
+    max-width: 80%;
+    min-height: 200px;
+    margin: auto;
+    transform: translateY(-55px);
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+
+.inputSection {
+    /* background-color: blue;
+    padding: 10px; */
+    display: flex;
+    gap: 25px;
+
+}
+
+.indivInput {
+    width: 230px;
+}
+
+.indivInput p {
+    font-size: 12px;
+    color: white;
+}
+
+.inputDiv {
+    margin: 10px 0 0 0;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+
+.inputDiv input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    outline: none;
+}
+
+/* .buttonSection{
+    background-color: blue;
+    padding: 10px;
+} */
+
+.buttonSection button {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 20px 57px;
+    color: white;
+    cursor: pointer;
+}
+
+.buttonSection button:active {
+    transform: scale(0.9);
+}
+
+/* section 1 styles starts here */
+
+.section1 {
+    min-height: 90vh;
+    background-image: url(../imgs/room_4.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.section1 .col {
+    flex: 1;
+    /* background-color: blue; */
+    height: 90%;
+    width: 100%;
+}
+
+.col .container {
+    background-color: white;
+    max-width: 520px;
+    min-height: 520px;
+    margin: 60px 20px 10px auto;
+    padding: 40px 20px;
+
+}
+
+.userData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* height: 100px; */
+    /* background-color: red; */
+}
+
+.userData .secdata {
+    flex: 1;
+    /* background-color: yellow; */
+    height: 100%;
+}
+
+div .title {
+    font-size: 14px;
+    margin: 10px 0;
+    color: grey;
+}
+
+.secdata div .sectionOpt {
+    border: 1px solid grey;
+    color: grey;
+    padding: 10px;
+    margin: 10px 0 0 0;
+}
+
+.range {
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+.boolean {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    background-color: rgb(207, 207, 207);
+    border-radius: 2px;
+}
+
+.boolean .bool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: white;
+    padding: 8px;
+    color: grey;
+}
+
+.service {
+    margin: 50px 0 0 0;
+}
+
+.service .list {
+    /* background-color: red; */
+    padding: 10px 2px 2px 2px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.list .item {
+    padding: 10px 15px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    color: grey;
+}
+
+.priceSec {
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.priceSec img {
+    width: 150px;
+}
+
+.priceSec .price h1 {
+    color: lightskyblue;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.price h5 {
+    color: grey;
+    font-weight: 100;
+    margin: 0 0 0 10px;
+}
+
+.col div {
+    color: white;
+}
+
+.promtitle {
+    margin: 10px 50px;
+}
+
+.col div .h1 {
+    font-size: 50px;
+    font-weight: 100;
+    margin: 30px 0 0 0;
+}
+
+.prom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 40px;
+    line-height: 30px;
+    max-width: 550px;
+}
+
+.prom img {
+    width: 150px;
+}
+
+.prom div h1 {
+    margin: 0 0 20px 0;
+}
+
+.prom div .proPri {
+    margin: 0 0 0 20px;
+    line-height: normal;
+}
+
+.prom div .span {
+    background-color: #6da4b5;
+    padding: 5px 15px;
+    margin: 15px 0;
+    font-size: 12px;
+    border-radius: 5px;
+    line-height: normal;
+}
+
+.promBack {
+    background-image: url(../imgs/room_2.png);
+    padding: 30px;
+    margin: 2px;
+    max-width: 630px;
+}
+
+.findRoom {
+    padding: 100px 0 0 0;
+    text-align: center;
+    color: grey;
+}
+
+.findRoom h1 {
+    margin: 30px;
+    font-size: 55px;
+    font-weight: 100;
+    color: rgb(86, 86, 86);
+}
+
+.grid {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid .card {
+    /* background-color: blue; */
+    height: 400px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .price {
+    position: absolute;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    top: 20px;
+    right: 20px;
+}
+
+.card .title {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    right: 0;
+    left: 0;
+    color: white;
+    font-size: 18px;
+}
+
+@media screen and (max-width:505px) {
+    .subnav {
+        flex-direction: column;
+        padding: 20px 0 15px 0;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .none{
+        display: none;
+    }
+    .menu {
+        display: block;
+        width: 35px;
+        height: 35px;
+        background-color: rgb(239, 239, 239);
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+
+    .banner_content {
+        padding: 10px;
+    }
+
+
+}
+
+@media screen and (max-width:1317px) {
+    .translated {
+        flex-direction: column;
+        padding: 15px 10px;
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width:977px) {
+    .inputSection {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1269px) {
+    .section1 {
+        flex-direction: column;
+    }
+
+    .col .container {
+
+        margin: auto;
+    }
+
+    .prom,
+    .promtitle {
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:635px) {
+    .prom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .prom div h1 {
+        margin: 0 0 0 10px;
+    }
+
+    .promBack,
+    .prom {
+        max-width: 90%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .col div .h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1253px) {
+    .grid {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:1067px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:703px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:459px) {
+    .col .container {
+        margin: 0;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:399px) {
+    .service .list {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* room page */
+.header {
+    background-image: url(../imgs/room_2.png);
+    background-size: cover;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+}
+
+.header h1 {
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.sec_1 {
+    /* background-color: red; */
+    padding: 10px;
+    max-width: 1200px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    color: grey;
+
+}
+
+.sec_1 h1 {
+    font-weight: 100;
+}
+
+.sec_1 div img {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.sec_1 div p {
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(125, 125, 125);
+}
+
+.sec_1 div .line {
+    height: 1px;
+    background-color: rgb(219, 219, 219);
+    margin: 10px 0;
+}
+
+.price_holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price_holder p span {
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.price_holder button {
+    background-color: lightblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.price_holder button:hover {
+    background-color: rgb(171, 226, 245);
+}
+
+@media screen and (max-width:693px) {
+    .sec_1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* contact page styles */
+
+.headerContact {
+    min-height: 50vh;
+    background-image: url(../imgs/room_3.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.headerContact h1 {
+    font-weight: 100;
+    font-size: 50px;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    min-height: 400px;
+    max-width: 70%;
+    margin: 0 auto;
+
+}
+
+.Fbox {
+    flex: 1;
+    min-height: 200px;
+    border-radius: 5px;
+    border: 1px solid rgb(222, 222, 222);
+}
+
+.transF {
+    min-height: 200px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    transform: translateX(-60px);
+}
+
+.transF img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.transF h1 {
+    color: rgb(94, 94, 94);
+    font-weight: 100;
+}
+
+.transF p {
+    color: grey;
+    margin: 10px 0 0 0;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.formContact {
+    display: flex;
+    max-width: 80%;
+    /* background-color: red; */
+    padding: 10px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.fCol {
+    max-width: 500px;
+    padding: 10px 40px 40px 40px;
+    /* background-color: violet; */
+}
+
+.fCol h3 {
+    font-weight: 100;
+    color: rgb(106, 106, 106);
+}
+
+.fCol h1 {
+    font-size: 50px;
+    font-weight: 100;
+    margin: 20px 0 40px;
+    color: rgb(106, 106, 106);
+}
+
+.fCol p {
+    color: rgb(109, 109, 109);
+    line-height: 30px;
+}
+
+.fCol button {
+    background-color: #6da4b5;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 4px;
+    margin: 40px 0 0 0;
+}
+
+.fCol button:active {
+    transform: scale(0.9);
+}
+
+.fCol1 {
+    flex: 1;
+    padding: 10px;
+    /* background-color: violet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.fCol1 input,
+.fCol1 textarea,
+.fCol1 button {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.fCol1 input,
+.fCol1 textarea {
+    background-color: #f9f9f9;
+    border: 1px solid #ececec;
+    padding: 10px 10px 10px 20px;
+    font-size: 17px;
+    outline: none;
+}
+
+.fCol1 textarea {
+    min-height: 200px;
+}
+
+.fCol1 button {
+    background-color: #6da4b5;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+}
+
+.fCol1 button:active {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width:1327px) {
+    .flex {
+        max-width: 90%;
+    }
+
+    .formContact {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width:1037px) {
+    .flex {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .formContact {
+        flex-direction: column;
+    }
+
+    .transF {
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width:473px) {
+    .transF {
+        flex-direction: column;
+    }
+    .fCol {
+        padding: 10px;
+    }
+}
